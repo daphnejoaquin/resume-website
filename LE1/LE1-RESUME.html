@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>me as a website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Crimson Text' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 5rem;
+            font-family: Open Sans, sans-serif;
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .panel,
+        .panel-body {
+            box-shadow: none;
+            background-color: white;
+
+        }
+
+        .panel-group .panel-heading {
+            padding: 0;
+            background-color: #5D6D7E
+        }
+
+        .panel-group .panel-heading:hover {
+            padding: 0;
+            background-color: #2E4053;
+            transition: 0.3s;
+        }
+
+        .panel-group .panel-heading a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            position: relative;
+            color: white;
+            font-family: 'Crimson Text';
+            font-size: 22px;
+        }
+
+        .panel-group .panel-heading a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+
+        .panel-group .panel-heading:after {
+            color: white;
+            background-color: #5c7188;
+        }
+
+        .panel-group .panel-heading a:after {
+            content: '−';
+            float: right;
+
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            content: '+';
+        }
+
+        .btn {
+            background-color: #35526d;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: beige;
+            padding-bottom: 5x;
+        }
+
+        h2 {
+            font-family: 'Courgette', cursive;
+            text-align: center;
+            color: beige;
+            padding-bottom: 10px;
+        }
+    
+        .social {
+            font-family: 'Courgette', cursive;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<header>
+
+    <img src="profile.png" class="rounded-circle mx-auto d-block" width="230" height="230">
+    <h1>Daphne Joaquin</h1>
+    <h2>Résumé</h2>
+
+</header>
+
+<body>
+
+
+    <!-- Personal Information -->
+    <div class="panel-group" id="accordionGroupClosed" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
+                        href="#collapseCloseOne" aria-expanded="true" aria-controls="collapseCloseOne">
+                        Personal Information
+
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseCloseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-4">
+                            <p><b>Last name:</b> Joaquin</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p><b>First name:</b> Daphne</p>
+                        </div>
+                        <div class="col-md-4">
+                                <p><b>Middle name:</b> Sario</p>
+                            </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                            <div class="col-md-6">
+                                <p><b>Address:</b> 142-B Jerusalem Extension, Multinational Village, Parañaque City</p>
+                            </div>
+                        </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-4">
+                            <p><b>Birthday:</b> December 27, 1999</p>
+                        </div>
+                        <div class="col-md-4">
+                                <p><b>Place of Birth:</b> Parañaque City</p>
+                            </div>
+                        <div class="col-md-4">
+                            <p id="age"></p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-4">
+                            <p><b>Father:</b> Eric Joseph S. Joaquin</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Occupation:</b> Database Administrator</p>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-4">
+                            <p><b>Mother:</b> Daisy S. Joaquin</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p><b>Occupation:</b> Housewife</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Education Background -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
+                        href="#collapseCloseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Education Background
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseCloseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <div class="card-deck">
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="Sacred-Heart.jpg" alt="Card image" style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>Sacred Heart School</b></h4>
+                                    <h5 class="card-text">Elementary School</h5>
+                                    <p class="card-text">Completion Year: 2012</p>
+                                    <h5 class="card-text">Junior High School</h5>
+                                    <p class="card-text">Completion Year: 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="UST-Logo-Senior-High-School-2017.png" alt="Card image"
+                                    style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>University of Santo Tomas - Senior High School</b></h4>
+                                    <h5 class="card-text">Senior High School</h5>
+                                    <p class="card-text">Completion Year: 2018</p>
+                                    <a href="http://www.ust.edu.ph/senior-high-school/" target="_blank"
+                                        class="btn btn-primary">Go to website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="UST-IICS.png" alt="Card image" style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title"><b>University of Santo Tomas - Institute of Information and
+                                            Computing Sciences</b></h4>
+                                    <h5 class="card-text">College</h5>
+                                    <h6 class="card-text">Bachelor of Science in Computer Science</h6>
+                                    <p class="card-text">Completion Year: 2018-</p>
+                                    <a href="http://www.ust.edu.ph/information-and-computing-sciences/" target="_blank"
+                                        class="btn btn-primary">Go to website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Professional Information -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
+                        href="#collapseCloseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Professional Information
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseCloseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+
+                    <div class="card-deck">
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="close-up-code-coding-160107.jpg" alt="Card image"
+                                    style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Experience with Java, HTML, and CSS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="adobe-photoshop-data-desk-693892.jpg" alt="Card image"
+                                    style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Graphic Designing and Video Editing</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="artwork-composition-creating-1368688.jpg"
+                                    alt="Card image" style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sketching</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Hobbies -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
+                        href="#collapseCloseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Hobbies
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseCloseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                    <div class="card-deck">
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="audio-cassette-cassette-tape-1626481.jpg"
+                                    alt="Card image" style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Listening to Music</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="background-beverage-ceramic-2726370.jpg" alt="Card image"
+                                    style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Watching Movies and TV Shows</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card first" style="width:400px">
+                            <div class="card-body text-center">
+                                <img class="card-img-top" src="beverage-books-caffeine-904616.jpg" alt="Card image"
+                                    style="width:90%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Reading Books</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Academic Schedule -->
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupClosed"
+                        href="#collapseCloseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Academic Schedule
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseCloseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Instructor</th>
+                                <th>Room</th>
+                                <th>Schedule</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>CS2614</b> – College Calculus for Computing Sciences</td>
+                                <td>Mr. Jonathan Cabero</td>
+                                <td>Rm. 47</td>
+                                <td>MF 1:00pm - 2:30pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>CS2615</b> – Design and Analysis of Algorithms</td>
+                                <td>Mr. Cecil Jose Delfinado</td>
+                                <td>Rm. 47</td>
+                                <td>T 3:00pm - 4:30pm, F 2:30pm - 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>CS2616</b> – Theory of Automata</td>
+                                <td>Mr. Cecil Jose Delfinado</td>
+                                <td>Rm. 46</td>
+                                <td>T 5:00pm - 8:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>ICS2607</b> – Information Management</td>
+                                <td>Mr. Edwin Torralba</td>
+                                <td>ICS Lab 3,
+                                    Rm. 47
+                                </td>
+                                <td>Th 5:00pm - 7:00pm,
+                                    F 5:00pm - 7:00pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>ICS2608</b> – Applications Development and Emerging Technologies 1
+                                    (Web-Front-End)</td>
+                                <td>Mr. Lawrence Decamora</td>
+                                <td>ICS Lab 3</td>
+                                <td>Th 1:00pm - 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>ELE PA</b> – Philosophical Anthropology</td>
+                                <td>Ms. Lyka Gumanay</td>
+                                <td>Rm. 47</td>
+                                <td>MW 2:30pm - 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>THY 3</b> – Christian Vision of the Church in Society</td>
+                                <td>Mr. Serge Paganao</td>
+                                <td>Rm. 58</td>
+                                <td>MW 5:00pm - 6:30pm</td>
+                            </tr>
+                            <tr>
+                                <td><b>PATH-FIT</b> – Beach Volleyball</td>
+                                <td>Mr. Jeffrey Drio</td>
+                                <td>MFBCHVC Main Field</td>
+                                <td>F 9:00am – 11:00am</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class=" social mx-auto d-block">SOCIAL MEDIA</h2>
+
+    <div class="row" style="padding-top: 20px">
+        <div class="col-md-4 row justify-content-end">
+            <a href="https://www.facebook.com/daphne2712" target="_blank">
+                <img src="FB White.png" alt="fb" style="width:42px;height:42px;border:0;">
+            </a>
+        </div>
+        <div class="col-md-4 row justify-content-center">
+            <a href="https://www.instagram.com/_daphnejoaquin/" target="_blank">
+                <img src="IG White.png" alt="fb" style="width:42px;height:42px;border:0;">
+            </a>
+        </div>
+        <div class="col-md-4 row justify-content-start">
+            <a href="https://twitter.com/dxphnejqn" target="_blank">
+                <img src="twitter_PNG15.png" alt="fb" style="width:42px;height:42px;border:0;">
+            </a>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <script>
+            window.onload = function age() {
+                var birthDateStr = '19991227',
+                    parts = birthDateStr.match(/(\d{4})(\d{2})(\d{2})/),
+                    dateObj = new Date(parts[1], parts[2] - 1, parts[3]);
+
+                getAge(dateObj);
+
+                function getAge(birthDate) {
+                    var now = new Date();
+
+                    function isLeap(year) {
+                        return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
+                    }
+
+                    var days = Math.floor((now.getTime() - birthDate.getTime()) / 1000 / 60 / 60 / 24);
+                    var age = 0;
+
+                    for (var y = birthDate.getFullYear(); y <= now.getFullYear(); y++) {
+                        var daysInYear = isLeap(y) ? 366 : 365;
+                        if (days >= daysInYear) {
+                            days -= daysInYear;
+                            age++;
+                        }
+                    }
+                    document.getElementById('age').innerHTML = '<b>Age: </b>' + age.toString() + ' years old';
+                }
+            }
+        </script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
